@@ -2,45 +2,8 @@
 
 # GMK10-WACOM
 
-</div>
-
-<div align="center">
-
 ### Gaomon Tablets Configuration With `xsetwacom` utility
 
+#### Ref => https://www.davidrevoy.com/article870/review-gaomon-m10k-2018-graphic-tablet-on-linux-for-digital-painting
+
 </div>
-
-#### Exemple with Mk10 keymap
-
-```bash
-#     +-----+
-#     |  1  |
-#     +-----+
-#     |  2  |
-#     +-----+
-#     |  3  |
-#     +-----+
-#     |  8  |
-#     +-----+
-#     |  9  |
-#     +-----+
-# +---+-----+---+
-# |             |
-# |   +-----+   |
-# |   | 10  |   |
-# |   |     |   |
-# |   +-----+   |
-# |             |
-# +---+-----+---+
-#     +-----+
-#     | 11  |
-#     +-----+
-#     | 12  |
-#     +-----+
-#     | 13  |
-#     +-----+
-#     | 14  |
-#     +-----+
-#     | 15  |
-#     +-----+
-```
