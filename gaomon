@@ -9,10 +9,10 @@ tabletpad="HUION Huion Tablet Pad pad"
 touchpad="HUION Huion Tablet Touch Strip pad" #unsupported
 dialpad="HUION Huion Tablet Dial pad" #unsupported
 # Display all available option:
-#xsetwacom get "$tabletstylus" all
-#xsetwacom get "$tabletpad" all
-#xsetwacom get "$touchpad" all
-#xsetwacom get "$dialpad" all
+# xsetwacom get "$tabletstylus" all
+# xsetwacom get "$tabletpad" all
+# xsetwacom get "$touchpad" all
+# xsetwacom get "$dialpad" all
 
 # Reset
 xsetwacom --set "$tabletstylus" ResetArea
@@ -34,8 +34,8 @@ xsetwacom --set "$tabletstylus" Area 0 0 "$Xtabletmaxarea" "$areaY"
 xsetwacom --set "$tabletstylus" Rotate half
 
 # Stylus button:
-#xsetwacom --set "$tabletstylus" Button 1 1 # default, to click and draw
-#xsetwacom --set "$tabletstylus" Button 2 "key Control_L" # Ctrl = color picker
+xsetwacom --set "$tabletstylus" Button 1 1 # default, to click and draw
+xsetwacom --set "$tabletstylus" Button 2 "key b" # b = brush
 #xsetwacom --set "$tabletstylus" Button 3 3 # default (Right click)
 
 # Tweaks
@@ -49,9 +49,6 @@ xsetwacom --set "$tabletstylus" PressureCurve 0 0 100 100
 # Minimal trimming is also good.
 xsetwacom --set "$tabletstylus" Suppress 0 # data pt.s filtered, default is 2, 0-100
 xsetwacom --set "$tabletstylus" RawSample 1 # data pt.s trimmed, default is 4, 1-20
-
-# For left-handed mode (rotation):
-#xsetwacom --set "$tabletstylus" Rotate half
 
 # Buttons
 # Note: touchpad around 10 button is not supported
@@ -89,17 +86,15 @@ xsetwacom --set "$tabletstylus" RawSample 1 # data pt.s trimmed, default is 4, 1
 # keyboard key for xsetwacom: https://pastebin.com/aXGDkJTU
 
 xsetwacom --set "$tabletpad" Button 1 "key Control_L" # Ctrl = color picker
-xsetwacom --set "$tabletpad" Button 2 "key KP_Divide" # / = Switch to previous used brush preset
-xsetwacom --set "$tabletpad" Button 3 "key Shift_L" # Shift = Resize brush
-xsetwacom --set "$tabletpad" Button 8 "key v" # v = line
-xsetwacom --set "$tabletpad" Button 9 "key m" # m = mirror
+xsetwacom --set "$tabletpad" Button 2 "key V" # =
+xsetwacom --set "$tabletpad" Button 3 "key W" # = hand up selector
+xsetwacom --set "$tabletpad" Button 8 "key SHIFT" # v = shift+
+xsetwacom --set "$tabletpad" Button 9 "key CTRL" # = ctrl+
 
 xsetwacom --set "$tabletpad" Button 10 "key e" # e = eraser
 
-xsetwacom --set "$tabletpad" Button 11 "key r" # r = pick layer
-xsetwacom --set "$tabletpad" Button 12 "key l" # l = select lighter color
-xsetwacom --set "$tabletpad" Button 13 "key k" # k = select darker color
-xsetwacom --set "$tabletpad" Button 14 "key o" # o = more opacity
-xsetwacom --set "$tabletpad" Button 15 "key i" # i = less opacity
-
-echo "Gaomon Driver udpated !"
+xsetwacom --set "$tabletpad" Button 11 "key Delete" # = remove
+xsetwacom --set "$tabletpad" Button 12 "key space" # = move
+xsetwacom --set "$tabletpad" Button 13 "key M" # m = mirror
+xsetwacom --set "$tabletpad" Button 14 "key CTRL SHIFT Z" # = next
+xsetwacom --set "$tabletpad" Button 15 "key CTRL Z" # = prev
